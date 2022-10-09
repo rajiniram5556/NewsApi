@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopheadlinesComponent } from './topheadlines/topheadlines.component';
 import {HttpClientModule} from '@angular/common/http';
-import { TechComponent } from './tech/tech.component';
-import { SportsComponent } from './sports/sports.component';
+import {TcnewsapiService } from './service/tcnewsapi.service';
+import {TechComponent} from './tech/tech.component';
+import {SportsComponent} from './sports/sports.component'
+ 
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { SportsComponent } from './sports/sports.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
+    
   ],
-  providers: [],
+  providers: [TcnewsapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
