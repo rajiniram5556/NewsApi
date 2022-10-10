@@ -6,7 +6,7 @@
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration production",
-    "heroku-postbuild": "npm build --configuration production -aot",
+    "heroku-postbuild": "npm run --configuration production -aot",
 
     "test": "ng test"
   },
