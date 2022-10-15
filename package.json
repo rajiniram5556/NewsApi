@@ -2,7 +2,7 @@
   "name": "news-api",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "web": "npm run start",
     "start": "ng server.js",
     "build": "ng build",
     "test": "ng test"
