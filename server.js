@@ -10,4 +10,5 @@ app.get('/*', function(req,res)
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log('Express server listening on port', port)
+  server.listen(process.env.PORT || port)
 });
