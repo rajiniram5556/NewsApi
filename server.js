@@ -1,17 +1,13 @@
-
-'use strict';
-
-const path = require('path');
 const express = require('express');
-const http = require('http');
-
+const path = require('path');
 const app = express();
-const server = http.Server(app);
+app.use(express.static(__dirname + '/dist/<news-api>'));
+app.get('/*', function(req,res)
+
+{res.sendFile(path.join(__dirname+'/dist/<news-api>/index.html'));});
+
 
 const port = process.env.PORT || 8080;
-
-app.use('/', express.static(path.join(__dirname, 'testheroku')));
-
-server.listen(port, () => {
-  console.log(`Listening on http://localhost:${port}/`);
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
 });
