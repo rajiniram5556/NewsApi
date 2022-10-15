@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build:production": "node --version",
+    "build:": "node --version",
     "build": "ng build",
     "watch": "ng build --watch --configuration production",
     "heroku-postbuild": "npm run --configuration production -aot",
+    
+    
 
     "test": "ng test"
     
