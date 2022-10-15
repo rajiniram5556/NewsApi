@@ -6,4 +6,8 @@ app.get('/*', function(req,res)
 
 {res.sendFile(path.join(__dirname+'/dist/<news-api>/index.html'));});
 
-app.listen(process.env.PORT || 8082);
+
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
+});
