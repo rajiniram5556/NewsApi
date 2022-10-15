@@ -4,13 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build:production": "node --version",
     "build": "ng build",
-    "watch": "ng build --watch --configuration production",
-    "heroku-postbuild": "npm run --configuration production",
+    "watch": "ng build --watch --configuration development",
+    "heroku-postbuild": "npm run --configuration production -aot",
     "test": "ng test"
     
   },
+
 
   "private": true,
   "dependencies": {
