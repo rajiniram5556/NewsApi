@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build:production": "node --version",
+    "build:": "node --version",
     "watch": "ng build --watch --configuration production",
-    "heroku-postbuild": "npm run --configuration production -aot",
+    "heroku-postbuild": "npm run --configuration prod",
     "test": "ng test"
     
   },
